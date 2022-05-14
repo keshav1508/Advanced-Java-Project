@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>All Servlet</title>
+</head>
+<body>
+<h1>Student Name: Keshav Dubey</h1>
+<h1>Batch : D</h1>
+<h1>PRN No: 78555693</h1>
+<h2>Servlet Demonstration</h2>
+<table>
+<tr><td>Enter Two Numbers</td><tr>
+<tr>
+<td>Number 1</td>
+<td> <input type="text" name="num1" id="num1" 
+placeholder="Enter Here"></td>
+</tr>
+<tr>
+<td>Number 2</td>
+<td> <input type="text" name="num2" id="num2" 
+placeholder="Enter Here"></td>
+</tr>
+<tr>
+<td> 
+<form action="FirstServlet" method="get" 
+onsubmit="getN()">
+<input type="hidden" name="n1" id="n1" value="">
+<input type="hidden" name="n2" id="n2" value="">
+<button type="submit" style="color:red">Servlet 
+Interface</button>
+</form>
+</td>
+</tr>
+<tr>
+<td>
+<form action="FirstGeneric" method="get" 
+onsubmit="getN()">
+<input type="hidden" name="n3" id="n3" value="">
+<input type="hidden" name="n4" id="n4" value="">
+<button type="submit" style="color:red">Generic 
+Servlet</button>
+</form>
+</td>
+</tr>
+<tr>
+<td>
+<form action="HttpDemo" method="get" 
+onsubmit="getN()">
+<input type="hidden" name="n5" id="n5" value="">
+<input type="hidden" name="n6" id="n6" value="">
+<button type="submit" style="color:red">HTTP 
+Servlet</button>
+</form>
+</td>
+</tr>
+</table>
+<script type="text/javascript">
+var N1 = document.getElementById("n1");
+var N2 = document.getElementById("n2");
+var N3 = document.getElementById("n3");
+var N4 = document.getElementById("n4");
+var N5 = document.getElementById("n5");
+var N6 = document.getElementById("n6");
+function getN() {
+N1.value = document.getElementById("num1").value;
+N3.value = document.getElementById("num1").value;
+N5.value = document.getElementById("num1").value;
+N2.value = document.getElementById("num2").value;
+N4.value = document.getElementById("num2").value;
+N6.value = document.getElementById("num2").value;
+}
+</script>
+</body>
+</html>
